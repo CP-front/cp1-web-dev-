@@ -9,27 +9,45 @@ console.log(idade);
 let valor = 10;     //declarando uma variável com valor
 console.log(valor);
 
-//exercicio 2
-// 2 - Como usar o operador os operadores( != , ==, >= ) em JavaScript? Exemplifique e demonstre a saída! (5
-//     Pontos
+//EXERCÍCIO 2
+// 2 - Como usar o operador os operadores( != , ==, >= ) em JavaScript? Exemplifique e demonstre a saída!
 let a = 5;
 let b = 5;
 let c = 10;
 
 //== comparação
-
-console.log(a == c)
-
-console.log(a == b);
+console.log(a == c);        //saída : false        
+console.log(a == b);        //saída : true
 
 // != compara se os valores são diferentes
-
-console.log(a != b)
-
-console.log(a != b)
+console.log(a != b);        //saída : false
+console.log(a != c);        //saída : true
 
 // >= Verifica se o valor é maior ou igual
+console.log(a >= b);        //saída : true
+console.log(c >= a);        //saída : true
+console.log(a >= c);        //saída : false
 
-console.log(a >= b)
+// EXERCÍCIO 3
+// 3 - Escreva um programa(usando Switch case) que calcula o índice de massa corporal (IMC) de uma pessoa e exibe uma mensagem indicando se ela está abaixo, no peso ideal ou acima do peso. Considere as 
+// seguintes faixas de IMC: abaixo de 18,5 (abaixo do peso), entre 18,5 e 24,9 (peso ideal) e acima de 24,9 (acima do peso). Exemplifique e demonstre a saída! 
+let peso = parseFloat(prompt("Informe o seu peso: (kg)"));
+let altura = parseFloat(prompt("Informe a sua altura: (m)"));
+let imc = peso / (altura ** 2);
 
-console.log(a >= c)
+switch (true){
+    case (imc < 18.5):
+        console.log(`IMC: ${imc.toFixed(2)}`);
+        console.log(`Você está abaixo do peso`);
+        break;
+    case (imc >= 18.5 && imc <= 24.9):
+        console.log(`IMC: ${imc.toFixed(2)}`)
+        console.log(`Você está no peso ideal`);
+        break;
+    case (imc > 24.9):
+        console.log(`IMC: ${imc.toFixed(2)}`)
+        console.log(`Você está acima do peso`);
+        break;
+    default:
+        console.log(`Valor de IMC inválido`);
+}
