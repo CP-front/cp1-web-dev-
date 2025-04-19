@@ -51,3 +51,11 @@ switch (true){
     default:
         console.log(`Valor de IMC inválido`);
 }
+
+//Exercício 4:
+//Faça um programa que que faça uma repetição até 50 (usando for )apresentando a mensagem no console, o valor é: !
+
+for (let i = 0; i < 50;i++)
+    {
+ console.log("O valor é de ",i+1)
+    }
