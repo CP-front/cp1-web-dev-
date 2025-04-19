@@ -59,3 +59,17 @@ for (let i = 0; i < 50;i++)
     {
  console.log("O valor é de ",i+1)
     }
+
+//Exercício 5
+// Crie um programa que receba um nome de usuário e uma senha e verifique se eles correspondem aos dados de um usuário cadastrado
+//Criação das variaveis://
+let usuario, senha;
+//atribuindo valores as variaveis//
+usuario = prompt("Digite o nome de usúario");
+senha = prompt("Digite a senha");
+//Verificação de valores//
+ if(usuario == "admin" && senha == 1234 ){
+    console.log("Usuário Autentificado!")
+  }else{
+    console.log("Usuarío não Autenticado!")
+  }
