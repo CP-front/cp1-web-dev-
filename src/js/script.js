@@ -52,16 +52,16 @@ switch (true){
         console.log(`Valor de IMC inválido`);
 }
 
-//Exercício 4:
-//Faça um programa que que faça uma repetição até 50 (usando for )apresentando a mensagem no console, o valor é: !
+// EXERCÍCIO 4
+// 4 - Faça um programa que que faça uma repetição até 50 (usando for )apresentando a mensagem no console, o valor é: !
 
 for (let i = 0; i < 50;i++)
     {
  console.log("O valor é de ",i+1)
     }
 
-//Exercício 5
-// Crie um programa que receba um nome de usuário e uma senha e verifique se eles correspondem aos dados de um usuário cadastrado
+// EXERCÍCIO 5
+// 5 - Crie um programa que receba um nome de usuário e uma senha e verifique se eles correspondem aos dados de um usuário cadastrado
 //Criação das variaveis://
 let usuario, senha;
 //atribuindo valores as variaveis//
@@ -73,3 +73,26 @@ senha = prompt("Digite a senha");
   }else{
     console.log("Usuarío não Autenticado!")
   }
+
+// EXERCÍCIO 6
+// 6 - Vamos criar um programa que calcule a média de 7 notas e exiba uma mensagem indicando se o aluno foi aprovado ou reprovado. 
+// Considere que a média mínima para aprovação é 6. Exemplifique e demonstre a saída!
+let totalnotas = 7;
+let somanotas = 0;
+for (let i = 0; i < totalnotas; i++){
+    let notas = parseFloat(prompt(`Informe a sua ${i + 1} nota`));
+    if (notas < 0 || notas > 10){
+        alert("Nota inválida, digite uma nota válida");
+        break;
+    }
+    somanotas += notas;
+}
+let media = somanotas / totalnotas
+if (media >= 6){
+    alert(`Média: ${media.toFixed(2)} \nAluno Aprovado!`)
+    console.log(`Média: ${media.toFixed(2)} \nAluno Aprovado!`)
+}
+else{
+    alert(`Média: ${media.toFixed(2)} \nAluno Reprovado!`)
+    console.log(`Média: ${media.toFixed(2)} \nAluno Reprovado!`)
+}
