@@ -9,3 +9,27 @@ console.log(idade);
 let valor = 10;     //declarando uma variável com valor
 console.log(valor);
 
+//exercicio 2
+// 2 - Como usar o operador os operadores( != , ==, >= ) em JavaScript? Exemplifique e demonstre a saída! (5
+//     Pontos
+let a = 5;
+let b = 5;
+let c = 10;
+
+//== comparação
+
+console.log(a == c)
+
+console.log(a == b);
+
+// != compara se os valores são diferentes
+
+console.log(a != b)
+
+console.log(a != b)
+
+// >= Verifica se o valor é maior ou igual
+
+console.log(a >= b)
+
+console.log(a >= c)
