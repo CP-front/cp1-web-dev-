@@ -131,3 +131,12 @@ console.log("Útima posição de 'ia':", texto.lastIndexOf("ia"))
 console.log("Posição da palavra ciência: ", texto.indexOf("ciência"))
 //4) Buscando a palavra métodos
 console.log("Posição da palavra métodos: ", texto.indexOf("métodos")) 
+
+//EXERCÍCO 9 
+// 9 - Criando um programa que declare a variável como String depois converta para float e em seguida apresente 
+// o tipo da variável.
+
+let numString = "934.528"
+console.log(typeof numString) // declara como String
+console.log(parseFloat(numString)) // conversão para float 
+console.log(typeof parseFloat(numString)) // tipo alterado da variável
