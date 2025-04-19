@@ -1,10 +1,10 @@
 // EXERCÍCIO 1
 // 1 - Como declarar uma variável com valor undefined, vazio e com valor em JavaScript? Exemplifique e demonstre a saída do valor da variável! 
-let nome;       //declarando uma variável com valor undefined
-console.log(nome);
+let time;       //declarando uma variável com valor undefined
+console.log(time);
 
-let idade = "";     //declarando uma variável com valor vazio
-console.log(idade);
+let vazio = "";     //declarando uma variável com valor vazio
+console.log(vazio);
 
 let valor = 10;     //declarando uma variável com valor
 console.log(valor);
@@ -96,3 +96,26 @@ else{
     alert(`Média: ${media.toFixed(2)} \nAluno Reprovado!`)
     console.log(`Média: ${media.toFixed(2)} \nAluno Reprovado!`)
 }
+
+// EXERCÍCIO 7
+// 7 - Crie um programa que imprima na tela o nome, idade, Curso e ano na tela um embaixo do outro , no 
+// seu html coloque um fundo e um título e o javascript deve ser externo.
+let nome = "Rodrigo";
+let idade = 18;
+let curso = "Engenharia de Software";
+let ano = 2025;
+
+const ex7 = document.getElementById("ex7");
+
+ex7.innerHTML = `
+  Nome: ${nome} <br>
+  Idade: ${idade} <br>
+  Curso: ${curso} <br>
+  Ano: ${ano}
+`;
+console.log(`
+  Nome: ${nome}
+  Idade: ${idade}
+  Curso: ${curso}
+  Ano: ${ano}
+`);
