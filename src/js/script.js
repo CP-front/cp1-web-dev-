@@ -119,3 +119,15 @@ console.log(`
   Curso: ${curso}
   Ano: ${ano}
 `);
+
+// EXERCÍCIO 8
+//Criando o programa
+let texto = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas."
+//1) Buscando a primeira posição de "em"
+console.log("Primeira posição de 'em': ", texto.indexOf("em"));
+//2) Buscando a ultima posição de "ia"
+console.log("Útima posição de 'ia':", texto.lastIndexOf("ia"))
+//3) Buscando a palavra ciência
+console.log("Posição da palavra ciência: ", texto.indexOf("ciência"))
+//4) Buscando a palavra métodos
+console.log("Posição da palavra métodos: ", texto.indexOf("métodos")) 
